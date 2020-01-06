@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+	<portlet>
+		<portlet-name>Login</portlet-name>
+		<display-name>Login</display-name>
+		<portlet-class>com.dalrada.dashboard.application.module.controller.DashboardApplicationLoginModuleController</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/jsp/Login.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+		</supports>
+		<portlet-info>
+			<title>Login</title>
+			<short-title>Login</short-title>
+			<keywords>Login</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+
+	<portlet>
+		<portlet-name>Manage Roles</portlet-name>
+		<display-name>Manage Roles</display-name>
+		<portlet-class>com.dalrada.dashboard.application.module.controller.DashboardApplicationModuleController</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/jsp/ManageRole.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+		</supports>
+		<portlet-info>
+			<title>Manage Roles</title>
+			<short-title>Manage Roles</short-title>
+			<keywords>Manage Roles</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	
+	<portlet>
+		<portlet-name>Manage Users</portlet-name>
+		<display-name>Manage Users</display-name>
+		<portlet-class>com.dalrada.dashboard.application.module.controller.DashboardApplicationModuleController</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/jsp/ManageUser.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+		</supports>
+		<portlet-info>
+			<title>Manage Users</title>
+			<short-title>Manage Users</short-title>
+			<keywords>Manage Users</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	
+	<portlet>
+		<portlet-name>Manage Warehouses</portlet-name>
+		<display-name>Manage Warehouses</display-name>
+		<portlet-class>com.dalrada.dashboard.application.module.controller.DashboardApplicationModuleController</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/jsp/ManageWarehouse.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+		</supports>
+		<portlet-info>
+			<title>Manage Warehouses</title>
+			<short-title>Manage Warehouses</short-title>
+			<keywords>Manage Warehouses</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	
+	<!-- <portlet>
+		<portlet-name>Upload</portlet-name>
+		<display-name>Upload</display-name>
+		<portlet-class>com.dalrada.dashboard.application.module.controller.DashboardApplicationModuleController</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/jsp/Upload.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+		</supports>
+		<portlet-info>
+			<title>Upload</title>
+			<short-title>Upload</short-title>
+			<keywords>Upload</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet> -->
+	
+<!-- 	<portlet>
+		<portlet-name>Reconcile</portlet-name>
+		<display-name>Reconcile</display-name>
+		<portlet-class>com.dalrada.dashboard.application.module.controller.DashboardApplicationReconcileModule</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/jsp/Reconcile1.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+		</supports>
+		<portlet-info>
+			<title>Reconcile</title>
+			<short-title>Reconcile</short-title>
+			<keywords>Reconcile</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet> -->
+	
+</portlet-app>
